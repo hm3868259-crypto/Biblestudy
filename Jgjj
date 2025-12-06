@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bible Promise — Find Purpose in God's Promises</title>
+  <meta name="description" content="Bible study resources, curated promises, daily devotionals and a gratitude journal to help you discover purpose through God's Word." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Bible Promise</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button data-nav="home" class="nav-btn">Home</button>
+        <button data-nav="promises" class="nav-btn">Promises</button>
+        <button data-nav="study" class="nav-btn">Study Plans</button>
+        <button data-nav="scripture" class="nav-btn">Scripture</button>
+        <button data-nav="journal" class="nav-btn">Gratitude Journal</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <!-- Home -->
+    <section id="home" class="page active" tabindex="-1">
+      <div class="hero">
+        <h2>Find purpose through God's promises</h2>
+        <p>Daily Scripture, guided study plans, curated promise verses, and a private gratitude journal to help you grow.</p>
+      </div>
+
+      <div class="card">
+        <h3>Verse of the Day</h3>
+        <blockquote id="votd" class="verse">Loading...</blockquote>
+        <button id="next-votd">Next Verse</button>
+      </div>
+
+      <div class="card">
+        <h3>Quick Scripture Search</h3>
+        <input id="searchInput" type="search" placeholder="Search verse text or reference (e.g., 'hope' or 'Jeremiah')" aria-label="Search scripture" />
+        <ul id="searchResults" class="results" aria-live="polite"></ul>
+      </div>
+
+      <div class="card">
+        <h3>Featured Study</h3>
+        <h4>7 Days — Finding Purpose in God's Promises</h4>
+        <p>Short daily readings designed to help you reflect and apply Promise of hopethe-read-bible/readchapter.htmlIsa 40:317<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bible Promise — Find Purpose in God's Promises</title>
+  <meta name="description" content="Bible study resources, curated promises, daily devotionals and a gratitude journal to help you discover purpose through God's Word." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Bible Promise</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button data-nav="home" class="nav-btn">Home</button>
+        <button data-nav="promises" class="nav-btn">Promises</button>
+        <button data-nav="study" class="nav-btn">Study Plans</button>
+        <button data-nav="scripture" class="nav-btn">Scripture</button>
+        <button data-nav="journal" class="nav-btn">Gratitude Journal</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <!-- Home -->
+    <section id="home" class="page active" tabindex="-1">
+      <div class="hero">
+        <h2>Find purpose through God's promises</h2>
+        <p>Daily Scripture, guided study plans, curated promise verses, and a private gratitude journal to help you grow.</p>
+      </div>
+
+      <div class="card">
+        <h3>Verse of the Day</h3>
+        <blockquote id="votd" class="verse">Loading...</blockquote>
+        <button id="next-votd">Next Verse</button>
+      </div>
+
+      <div class="card">
+        <h3>Quick Scripture Search</h3>
+        <input id="searchInput" type="search" placeholder="Search verse text or reference (e.g., 'hope' or 'Jeremiah')" aria-label="Search scripture" />
+        <ul id="searchResults" class="results" aria-live="polite"></ul>
+      </div>
+
+      <div class="card">
+        <h3>Featured Study</h3>
+        <h4>7 Days — Finding Purpose in God's Promises</h4>
+        <p>Short daily readings designed to help you reflect and apply key promises from Scripture.</p>
+        <button data-nav="study" class="nav-btn">See Study Plans</button>
+      </div>
+    </section>
+
+    <!-- Promises -->
+    <section id="promises" class="page" tabindex="-1">
+      <h2>God's Promises</h2>
+      <p>Filter by theme:</p>
+      <div class="tags" id="promiseTags"></div>
+      <ul id="promiseList" class="verse-list"></ul>
+    </section>
+
+    <!-- Study Plans -->
+    <section id="study" class="page" tabindex="-1">
+      <h2>Study Plans</h2>
+      <div class="study-card">
+        <h3>7 Days: Finding Purpose</h3>
+        <ol>
+          <li>Day 1 — Promise of identity (Eph 2:10)</li>
+          <li>Day 2 — Promise of guidance (Ps 32:8)</li>
+          <li>Day 3 — Promise of provision (Phil 4:19)</li>
+          <li>Day 4 — Promise of peace (John 14:27)</li>
+          <li>Day 5 — Promise of presence (Heb 13:5)</li>
+          <li>Day 6 — Promise of strength (Isa 40:31)</li>
+          <li>Day 7 — Promise of hope (Rom 15:13)</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Scripture -->
+    <section id="scripture" class="page" tabindex="-1">
+      <h2>Scripture Library</h2>
+      <p>Browse or search the seeded library (you can plug in an external Bible API later).</p>
+      <ul id="scriptureList" class="verse-list"></ul>
+    </section>
+
+    <!-- Gratitude Journal -->
+    <section id="journal" class="page" tabindex="-1">
+      <h2>Gratitude Journal</h2>
+      <p>Your journal is saved locally on this device. To sync between devices, connect an account (optional upgrade).</p>
+      <form id="journalForm" aria-label="Gratitude entry form">
+        <label for="entryText">Today's gratitude / devotional thought</label>
+        <textarea id="entryText" rows="4" placeholder="Write what you're thankful for..." required></textarea>
+        <button type="submit">Save Entry</button>
+      </form>
+      <h3>Saved entries</h3>
+      <ul id="entriesList" class="journal-list"></ul>
+      <button id="clearJournal" class="danger">Clear All</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Bible Promise — Use responsibly. Scripture quotations used for study & reflection.</small>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>:root{
+  --max-width:1100px;
+  --brand:#1b4f72;
+  --muted:#666;
+  --bg:#f8fafc;
+  --card:#ffffff;
+  --accent:#6aa6c9;
+  --danger:#c94a4a;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#111;line-height:1.45}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg,var(--brand),#145a7a);color:#fff;padding:0.75rem 0}
+.brand{margin:0;font-size:1.25rem;font-weight:600}
+.main-nav{display:inline-flex;gap:.5rem;margin-left:1rem}
+.nav-btn{background:transparent;color:inherit;border:1px solid rgba(255,255,255,0.15);padding:.35rem .65rem;border-radius:6px;cursor:pointer}
+.nav-btn:focus{outline:3px solid rgba(255,255,255,0.12)}
+.hero{padding:1.25rem 0}
+.hero h2{margin:.25rem 0;font-size:1.6rem}
+.card{background:var(--card);border-radius:10px;padding:1rem;margin-bottom:1rem;box-shadow:0 4px 12px rgba(13,20,25,0.05)}
+.verse{font-style:italic;margin:.5rem 0;padding:.5rem;border-left:4px solid var(--accent);background:linear-gradient(180deg,rgba(106,166,201,0.03),transparent);border-radius:6px}
+.results,.verse-list,.journal-list{list-style:none;padding:0;margin:0}
+.results li,.verse-list li{padding:.6rem;border-bottom:1px solid #eef2f5}
+.results li:last-child,.verse-list li:last-child{border-bottom:0}
+.tags{display:flex;gap:.5rem;flex-wrap:wrap;margin:0.5rem 0}
+.tag{background:#eef6fb;padding:.35rem .6rem;border-radius:999px;border:1px solid #d6eefb;cursor:pointer}
+.study-card{background:linear-gradient(180deg,#fff,#fbfdff);padding:1rem;border-radius:8px}
+input[type="search"],textarea{width:100%;padding:.6rem;border-radius:8px;border:1px solid #dfe6ea}
+textarea{resize:vertical}
+button{cursor:pointer;border:0;padding:.6rem .8rem;border-radius:8px;background:var(--brand);color:#fff}
+button.danger{background:var(--danger)}
+.site-footer{padding:1rem 0;margin-top:2rem;background:transparent;color:var(--muted);border-top:1px solid #e6eef3}
+@media (min-width:900px){
+  .main-nav{float:right}
+  .hero{display:flex;align-items:center;justify-content:space-between}
+}// app.js - client-side logic (no external libraries)
+// Simple static site data and storage
+
+const verses = [
+  // seeded verses (id, reference, text, tags/themes)
+  { id:1, ref:"Jeremiah 29:11", text:"For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you a future and a hope.", tags:["hope","future","plans"]},
+  { id:2, ref:"Romans 8:28", text:"And we know that in all things God works for the good of those who love him, who have been called according to his purpose.", tags:["purpose","sovereignty"]},
+  { id:3, ref:"Philippians 4:13", text:"I can do all things through him who strengthens me.", tags:["strength","encouragement"]},
+  { id:4, ref:"Isaiah 40:31", text:"But they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles...", tags:["strength","hope"]},
+  { id:5, ref:"Psalm 32:8", text:"I will instruct you and teach you in the way you should go; I will counsel you with my eye upon you.", tags:["guidance","presence"]},
+  { id:6, ref:"Philippians 4:19", text:"And my God will supply every need of yours according to his riches in glory in Christ Jesus.", tags:["provision"]},
+  { id:7, ref:"Hebrews 13:5", text:"I will never leave you nor forsake you.", tags:["presence","comfort"]},
+  { id:8, ref:"Romans 15:13", text:"May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.", tags:["hope","joy"]},
+];
+
+const themes = Array.from(new Set(verses.flatMap(v => v.tags))).sort();
+
+document.addEventListener('DOMContentLoaded', () => {
+  // navigation
+  document.querySelectorAll('.nav-btn[data-nav]').forEach(btn => {
+    btn.addEventListener('click', () => showPage(btn.getAttribute('data-nav')));
+  });
+
+  // Verse of the Day
+  const votdEl = document.getElementById('votd');
+  const nextBtn = document.getElementById('next-votd');
+  function showVOTD(seed){
+    const idx = Math.floor(Math.random()*verses.length);
+    const v = verses[idx];
+    votdEl.innerHTML = `<strong>${v.ref}</strong> — ${v.text}`;
+  }
+  nextBtn.addEventListener('click', ()=> showVOTD());
+  showVOTD();
+
+  // search
+  const input = document.getElementById('searchInput');
+  const results = document.getElementById('searchResults');
+  input.addEventListener('input', ()=> {
+    const q = input.value.trim().toLowerCase();
+    results.innerHTML = '';
+    if(!q) return;
+    const found = verses.filter(v => v.text.toLowerCase().includes(q) || v.ref.toLowerCase().includes(q));
+    if(found.length === 0){
+      results.innerHTML = '<li>No matches found.</li>';
+      return;
+    }
+    for(const v of found){
+      const li = document.createElement('li');
+      li.innerHTML = `<strong>${v.ref}</strong> — ${escapeHtml(v.text)}`;
+      results.appendChild(li);
+    }
+  });
+
+  // promises page tags & list
+  const tagContainer = document.getElementById('promiseTags');
+  const promiseList = document.getElementById('promiseList');
+  function renderTags(){
+    tagContainer.innerHTML = '';
+    themes.forEach(t => {
+      const btn = document.createElement('button');
+      btn.className = 'tag';
+      btn.textContent = t;
+      btn.addEventListener('click', ()=> renderPromises(t));
+      tagContainer.appendChild(btn);
+    });
+    const allBtn = document.createElement('button'); allBtn.className='tag'; allBtn.textContent='All';
+    allBtn.addEventListener('click', ()=> renderPromises());
+    tagContainer.prepend(allBtn);
+  }
+  function renderPromises(filter){
+    promiseList.innerHTML = '';
+    const list = filter ? verses.filter(v => v.tags.includes(filter)) : verses;
+    if(list.length === 0) promiseList.innerHTML = '<li>No verses found.</li>';
+    list.forEach(v=>{
+      const li = document.createElement('li');
+      li.innerHTML = `<strong>${v.ref}</strong> — ${escapeHtml(v.text)}<div class="small muted">Tags: ${v.tags.join(', ')}</div>`;
+      promiseList.appendChild(li);
+    });
+  }
+  renderTags(); renderPromises();
+
+  // scripture list page
+  const scriptureList = document.getElementById('scriptureList');
+  function renderScripture(){
+    scriptureList.innerHTML = '';
+    verses.forEach(v=>{
+      const li = document.createElement('li');
+      li.innerHTML = `<strong>${v.ref}</strong> — ${escapeHtml(v.text)}`;
+      scriptureList.appendChild(li);
+    });
+  }
+  renderScripture();
+
+  // gratitude journal (localStorage)
+  const journalForm = document.getElementById('journalForm');
+  const entryText = document.getElementById('entryText');
+  const entriesList = document.getElementById('entriesList');
+  const clearJournal = document.getElementById('clearJournal');
+  const JOURNAL_KEY = 'bp_journal_entries_v1';
+  function loadEntries(){
+    const raw = localStorage.getItem(JOURNAL_KEY) || '[]';
+    try {
+      return JSON.parse(raw);
+    } catch { return []; }
+  }
+  function saveEntries(arr){
+    localStorage.setItem(JOURNAL_KEY, JSON.stringify(arr));
+    renderEntries();
+  }
+  function renderEntries(){
+    const arr = loadEntries();
+    entriesList.innerHTML = '';
+    if(arr.length===0){ entriesList.innerHTML = '<li>No entries yet.</li>'; return; }
+    arr.slice().reverse().forEach(e=>{
+      const li = document.createElement('li');
+      const when = new Date(e.ts);
+      li.innerHTML = `<div><small>${when.toLocaleString()}</small></div><div>${escapeHtml(e.text)}</div>`;
+      entriesList.appendChild(li);
+    });
+  }
+  journalForm.addEventListener('submit', (ev)=>{
+    ev.preventDefault();
+    const txt = entryText.value.trim();
+    if(!txt) return;
+    const arr = loadEntries();
+    arr.push({ ts: Date.now(), text: txt });
+    saveEntries(arr);
+    entryText.value = '';
+  });
+  clearJournal.addEventListener('click', ()=>{
+    if(confirm('Clear all journal entries on this device? This cannot be undone.')){
+      localStorage.removeItem(JOURNAL_KEY);
+      renderEntries();
+    }
+  });
+  renderEntries();
+
+  // small utilities
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // page navigation helper
+  function showPage(id){
+    document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+    const target = document.getElementById(id);
+    if(target) {
+      target.classList.add('active');
+      target.focus();
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+  }
+
+});
+
+// escape helper
+function escapeHtml(s){
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
